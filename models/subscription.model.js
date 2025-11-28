@@ -46,7 +46,7 @@ const subscriptionSchema = new mongoose.Schema({
         }
     },
     renewalDate: {
-        tpe: Date,
+        type: Date,
         validate: {
             validator: function (value) {
                 return value > this.startDate
